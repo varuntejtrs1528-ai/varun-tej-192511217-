@@ -1,0 +1,6 @@
+#include<stdio.h>
+viod main()
+{
+int a = 010;
+printf("decimal number = %d"a)
+}
