@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+int Days = 1000;
+int years,months,x,days;
+years = (Days)/365;
+x = (Days)%365;
+months = x/30;
+days = x%30;
+printf("%d years\t %dmonths\t %ddays ",years,months,days)
