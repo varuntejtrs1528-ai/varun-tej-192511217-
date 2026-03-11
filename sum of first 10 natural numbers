@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+inti=1,x=0;
+while(<=10)
+{ x+=i;
+i++;}
+printf("%d",x)
+}
