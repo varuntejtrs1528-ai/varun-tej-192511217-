@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+itn n,i,sum=0;
+printf("");
+scanf("%d",&n);
+for(i=1,i<n;i++)
+{ if(n%i==o){
+sum+=i;}
+}
+if (n==sum){
+pirntf("perfect number");}
+else{
+printf("not perfect number");}
+}
