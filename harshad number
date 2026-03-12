@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+  int num,x,digit,sum = 10;
+printf("");
+scanf("%d",&sum);
+x = num;
+while (num!=0)
+{ digit = num%10;
+sum+=digit;
+num/=10;}
+if (x%sum==0){
+printf(" harshad number");}
+else{
+printf("not harshad number");}
+}
