@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+int num,digit,sum=0;
+printf("");
+scanf("%d",&num);
+while (num!=0){
+digit = num%10;
+sum+=digit;
+num = num/10;}
+printf("the sum of didits of num is %d",sum);
+}
