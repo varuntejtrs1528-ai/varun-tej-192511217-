@@ -1,0 +1,9 @@
+#include <stdio.h>
+struct emp {
+    char name[20];
+};
+
+int main() {
+    struct emp e={"John"};
+    printf("%s", e.name);
+}
