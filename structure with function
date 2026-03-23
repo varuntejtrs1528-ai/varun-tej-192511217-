@@ -1,0 +1,13 @@
+#include <stdio.h>
+struct student {
+    int id;
+};
+
+void display(struct student s){
+    printf("%d", s.id);
+}
+
+int main() {
+    struct student s = {10};
+    display(s);
+}
