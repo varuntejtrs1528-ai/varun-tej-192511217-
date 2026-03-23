@@ -1,0 +1,10 @@
+#include <stdio.h>
+struct student {
+    int id;
+};
+
+int main() {
+    struct student s1={1}, s2={1};
+    if(s1.id == s2.id)
+        printf("Equal");
+}
