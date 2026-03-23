@@ -1,0 +1,8 @@
+struct address {
+    char city[20];
+};
+
+struct student {
+    char name[20];
+    struct address a;
+};
