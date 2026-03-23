@@ -1,0 +1,9 @@
+#include <stdio.h>
+typedef struct {
+    int id;
+} student;
+
+int main() {
+    student s={1};
+    printf("%d", s.id);
+}
