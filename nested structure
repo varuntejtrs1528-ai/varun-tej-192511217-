@@ -1,0 +1,14 @@
+#include <stdio.h>
+struct date {
+    int d,m,y;
+};
+
+struct student {
+    int id;
+    struct date dob;
+};
+
+int main() {
+    struct student s = {1,{1,1,2000}};
+    printf("%d/%d/%d", s.dob.d,s.dob.m,s.dob.y);
+}
