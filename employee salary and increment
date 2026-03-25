@@ -1,0 +1,10 @@
+#include<stdio.h>
+struct emp{ float sal; };
+
+void inc(struct emp *e){ e->sal*=1.1; }
+
+void main(){
+    struct emp e={1000};
+    inc(&e);
+    printf("%.2f",e.sal);
+}
