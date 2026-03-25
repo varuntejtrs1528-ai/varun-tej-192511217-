@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct s { int r; };
+
+int search(struct s a[], int n, int key){
+    int i;
+    for(i=0;i<n;i++)
+        if(a[i].r==key) return i;
+    return -1;
+}
+
+void main(){
+    struct s a[3]={{1},{2},{3}};
+    printf("%d", search(a,3,2));
+}
