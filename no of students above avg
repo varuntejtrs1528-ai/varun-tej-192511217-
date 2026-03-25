@@ -1,0 +1,19 @@
+#include<stdio.h>
+struct s { int m; };
+
+int count(struct s a[],int n){
+    int i,sum=0,c=0;
+    float avg;
+    for(i=0;i<n;i++) sum+=a[i].m;
+    avg=sum/(float)n;
+
+    for(i=0;i<n;i++)
+        if(a[i].m > avg) c++;
+
+    return c;
+}
+
+void main(){
+    struct s a[3]={{10},{20},{30}};
+    printf("%d",count(a,3));
+}
