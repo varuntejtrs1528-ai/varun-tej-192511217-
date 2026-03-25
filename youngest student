@@ -1,0 +1,9 @@
+#include<stdio.h>
+struct s{ int age; };
+
+int min(struct s a[],int n){
+    int i,min=a[0].age;
+    for(i=1;i<n;i++)
+        if(a[i].age<min) min=a[i].age;
+    return min;
+}
