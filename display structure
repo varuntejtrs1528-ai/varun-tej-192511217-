@@ -1,0 +1,13 @@
+#include<stdio.h>
+struct s{ int m; };
+
+void display(struct s a[],int n){
+    int i;
+    for(i=0;i<n;i++)
+        printf("%d ",a[i].m);
+}
+
+void main(){
+    struct s a[3]={{10},{20},{30}};
+    display(a,3);
+}
