@@ -1,0 +1,13 @@
+#include<stdio.h>
+struct s { int x; };
+
+void swap(struct s *a, struct s *b){
+    struct s t;
+    t=*a; *a=*b; *b=t;
+}
+
+void main(){
+    struct s a={10}, b={20};
+    swap(&a,&b);
+    printf("%d %d",a.x,b.x);
+}
