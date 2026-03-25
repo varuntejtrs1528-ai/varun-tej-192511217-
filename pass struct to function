@@ -1,0 +1,7 @@
+#include<stdio.h>
+struct s{ int x; };
+void display(struct s t){ printf("%d",t.x); }
+void main(){
+    struct s a={10};
+    display(a);
+}
