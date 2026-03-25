@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct s{ int x; };
+
+void main(){
+    struct s *p;
+    int n=2,i;
+
+    p=(struct s*)malloc(n*sizeof(struct s));
+
+    for(i=0;i<n;i++)
+        p[i].x=i+1;
+
+    for(i=0;i<n;i++)
+        printf("%d ",p[i].x);
+}
