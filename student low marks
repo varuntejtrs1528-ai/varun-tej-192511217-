@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct s { int m; };
+
+int lowest(struct s a[], int n){
+    int i,min=a[0].m;
+    for(i=1;i<n;i++)
+        if(a[i].m < min) min = a[i].m;
+    return min;
+}
+
+void main(){
+    struct s a[3]={{50},{20},{70}};
+    printf("Lowest = %d", lowest(a,3));
+}
