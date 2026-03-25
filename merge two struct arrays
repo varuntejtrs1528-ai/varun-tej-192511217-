@@ -1,0 +1,12 @@
+#include<stdio.h>
+struct s { int x; };
+
+void main(){
+    struct s a[2]={{1},{2}}, b[2]={{3},{4}}, c[4];
+    int i;
+
+    for(i=0;i<2;i++) c[i]=a[i];
+    for(i=0;i<2;i++) c[i+2]=b[i];
+
+    for(i=0;i<4;i++) printf("%d ",c[i].x);
+}
