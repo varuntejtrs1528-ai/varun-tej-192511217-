@@ -1,0 +1,12 @@
+#include<stdio.h>
+struct s { int m; };
+
+void update(struct s *s1){
+    s1->m += 10;
+}
+
+void main(){
+    struct s a={50};
+    update(&a);
+    printf("%d",a.m);
+}
