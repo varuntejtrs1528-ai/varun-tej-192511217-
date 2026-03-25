@@ -1,0 +1,11 @@
+#include<stdio.h>
+struct student { int r; char name[20]; };
+
+void display(struct student s){
+    printf("%d %s", s.r, s.name);
+}
+
+void main(){
+    struct student s = {1,"Ram"};
+    display(s);
+}
