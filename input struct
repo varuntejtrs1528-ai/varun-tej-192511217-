@@ -1,0 +1,13 @@
+#include<stdio.h>
+struct s{ int m; };
+
+void input(struct s a[],int n){
+    int i;
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i].m);
+}
+
+void main(){
+    struct s a[3];
+    input(a,3);
+}
