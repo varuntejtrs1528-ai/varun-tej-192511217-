@@ -1,0 +1,13 @@
+#include<stdio.h>
+struct s{ int x; };
+
+void fun(struct s a[],int n){
+    int i;
+    for(i=0;i<n;i++)
+        printf("%d ",a[i].x);
+}
+
+void main(){
+    struct s a[2]={{1},{2}};
+    fun(a,2);
+}
