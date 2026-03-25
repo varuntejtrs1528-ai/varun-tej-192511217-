@@ -1,0 +1,13 @@
+#include<stdio.h>
+struct s{ int m; };
+void main(){
+    struct s a[3]={{30},{10},{20}};
+    int i,j;
+    struct s t;
+    for(i=0;i<3;i++)
+        for(j=i+1;j<3;j++)
+            if(a[i].m>a[j].m){
+                t=a[i]; a[i]=a[j]; a[j]=t;
+            }
+    for(i=0;i<3;i++) printf("%d ",a[i].m);
+}
