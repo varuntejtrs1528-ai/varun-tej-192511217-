@@ -1,0 +1,13 @@
+#include<stdio.h>
+struct emp{ int sal; };
+
+int total(struct emp e[],int n){
+    int i,sum=0;
+    for(i=0;i<n;i++) sum+=e[i].sal;
+    return sum;
+}
+
+void main(){
+    struct emp e[2]={{100},{200}};
+    printf("%d", total(e,2));
+}
