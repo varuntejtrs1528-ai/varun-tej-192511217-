@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct s { int m; };
+
+int max(struct s a[], int n){
+    int i,max=a[0].m;
+    for(i=1;i<n;i++)
+        if(a[i].m>max) max=a[i].m;
+    return max;
+}
+
+void main(){
+    struct s a[3]={{50},{90},{70}};
+    printf("%d", max(a,3));
+}
