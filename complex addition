@@ -1,0 +1,15 @@
+#include<stdio.h>
+struct c{ int r,i; };
+
+struct c add(struct c a, struct c b){
+    struct c t;
+    t.r=a.r+b.r;
+    t.i=a.i+b.i;
+    return t;
+}
+
+void main(){
+    struct c a={1,2},b={3,4},res;
+    res=add(a,b);
+    printf("%d+%di",res.r,res.i);
+}
