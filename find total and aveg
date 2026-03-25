@@ -1,0 +1,13 @@
+#include<stdio.h>
+struct s { int m; };
+
+void calc(struct s *p,int n){
+    int i,sum=0;
+    for(i=0;i<n;i++) sum+=(p+i)->m;
+    printf("Sum=%d Avg=%.2f",sum,sum/(float)n);
+}
+
+void main(){
+    struct s a[3]={{10},{20},{30}};
+    calc(a,3);
+}
