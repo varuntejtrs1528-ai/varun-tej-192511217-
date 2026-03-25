@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<string.h>
+struct s{ char name[20]; };
+
+void sort(struct s a[],int n){
+    int i,j;
+    struct s t;
+    for(i=0;i<n;i++)
+        for(j=i+1;j<n;j++)
+            if(strcmp(a[i].name,a[j].name)>0){
+                t=a[i]; a[i]=a[j]; a[j]=t;
+            }
+}
+
+void main(){
+    struct s a[3]={{"Z"},{"A"},{"M"}};
+    int i;
+    sort(a,3);
+    for(i=0;i<3;i++) printf("%s ",a[i].name);
+}
