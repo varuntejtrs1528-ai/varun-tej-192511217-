@@ -1,0 +1,12 @@
+#include<stdio.h>
+struct s{ int x; };
+
+struct s copy(struct s a){
+    return a;
+}
+
+void main(){
+    struct s a={10},b;
+    b=copy(a);
+    printf("%d",b.x);
+}
