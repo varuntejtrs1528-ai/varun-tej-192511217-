@@ -1,0 +1,17 @@
+#include<stdio.h>
+struct s { char name[20]; };
+
+int count(struct s a){
+    int i,c=0;
+    for(i=0;a.name[i];i++){
+        char ch=a.name[i];
+        if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+            c++;
+    }
+    return c;
+}
+
+void main(){
+    struct s a={"hello"};
+    printf("%d",count(a));
+}
