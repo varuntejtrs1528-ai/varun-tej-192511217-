@@ -1,0 +1,16 @@
+#include<stdio.h>
+struct time{ int h,m; };
+
+struct time add(struct time a,struct time b){
+    struct time t;
+    t.m=a.m+b.m;
+    t.h=a.h+b.h + t.m/60;
+    t.m%=60;
+    return t;
+}
+
+void main(){
+    struct time a={1,50},b={2,20};
+    struct time t=add(a,b);
+    printf("%d:%d",t.h,t.m);
+}
