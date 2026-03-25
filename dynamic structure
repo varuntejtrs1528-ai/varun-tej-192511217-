@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct s{ int x; };
+void main(){
+    struct s *p;
+    p=(struct s*)malloc(sizeof(struct s));
+    p->x=100;
+    printf("%d",p->x);
+}
