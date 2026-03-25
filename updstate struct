@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct s{ int m; };
+
+void update(struct s a[],int n){
+    int i;
+    for(i=0;i<n;i++)
+        a[i].m+=5;
+}
+
+void main(){
+    struct s a[2]={{10},{20}};
+    update(a,2);
+    printf("%d %d",a[0].m,a[1].m);
+}
