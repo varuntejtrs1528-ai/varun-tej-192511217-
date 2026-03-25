@@ -1,0 +1,9 @@
+#include<stdio.h>
+struct s{ int x; };
+
+void main(){
+    struct s a[2]={{5},{10}};
+    struct s *p=a;
+
+    printf("%d %d",(p+0)->x,(p+1)->x);
+}
