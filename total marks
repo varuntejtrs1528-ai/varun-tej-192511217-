@@ -1,0 +1,13 @@
+#include<stdio.h>
+struct s{ int m; };
+
+int total(struct s a[],int n){
+    int i,sum=0;
+    for(i=0;i<n;i++) sum+=a[i].m;
+    return sum;
+}
+
+void main(){
+    struct s a[3]={{10},{20},{30}};
+    printf("%d",total(a,3));
+}
