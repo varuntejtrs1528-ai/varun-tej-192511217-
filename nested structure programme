@@ -1,0 +1,8 @@
+#include<stdio.h>
+struct addr{ int pin; };
+struct stu{ struct addr a; };
+void main(){
+    struct stu s;
+    s.a.pin=600001;
+    printf("%d",s.a.pin);
+}
