@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+struct p{ int x,y; };
+
+float dist(struct p a,struct p b){
+    return sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
+}
+
+void main(){
+    struct p a={0,0},b={3,4};
+    printf("%.2f",dist(a,b));
+}
